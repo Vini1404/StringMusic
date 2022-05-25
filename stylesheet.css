@@ -1,0 +1,132 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: black;
+}
+#botao-hamburg
+{
+	font-size:5vw;
+	cursor:pointer;
+	position:absolute;
+	visibility:visible;
+	color: white;
+	top:1%;
+	right:2%
+}
+#menu-lateral 
+{
+	width:0%; /*largura inicial padrão da barra lateral, fica invisivel*/
+	overflow-x: hidden; /*inicialmente escondido */
+	position:fixed;
+	text-align:left;
+	top:3%;
+	left:1.5%;
+    border-radius: 9px;
+	background-color: #d48300;
+	transition:0.6s;
+	padding-top:2vw; /* para qualquer configuração de tela espaço superior fixo */
+}
+#menu-lateral li a
+{
+    text-decoration: none;
+    font-size: 3vw;
+    margin-left: 1vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+#menu-lateral li a:hover 
+{
+	transition-duration:0.4s;
+	transition-delay:0.1s;
+	transition-timing-function:ease;
+	transition-property:all;
+	color:rgb(27, 29, 100);
+}
+#menu-lateral ul
+{
+	list-style:none;
+}
+#closebtn 
+{
+	padding-left:0.5vw;
+}
+.titulo_site
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    color: rgb(255,255,255);
+    padding-top: 2%;
+}
+.logo
+{
+    width: 55%;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+}
+#geral
+{
+    background-color: rgb(27, 29, 100);
+    padding-bottom: 2%;
+}
+#apresentação
+{
+    display: block;
+    background-image: url(Fundo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding-top: 1vw;
+}
+#quadrado
+{
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 30px;
+    background-color: rgba(75, 75, 75, 0.37);
+    text-align: center;
+}
+.titulo_conteudo
+{
+    font-size: 5vw;
+    text-align: center;
+}
+.img_conteudo
+{
+    width: 60%;
+    margin-left: 20%;
+}
+#conteudo
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2vw;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 1.2vw;
+    padding-top: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p
+{
+    text-align: center;
+    font-size: 1.4vw;
+}
+h2
+{
+    text-align: justify;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}.img
+{
+    width: 6vw;
+    margin-left: 89vw;
+    margin-top: -100%;
+}
