@@ -3,111 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="author" content="Marcus Vinicius e Pedro Enrique">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="shortcut icon" href="Logo Fundo Escuro.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
     <title>Loja String Music</title>
-    <style>
-        @media only screen and (min-width:700px)
-        {
-            header
-            {
-                visibility:visible;
-            }
-
-            #botao-hamburg
-            {
-                visibility:hidden;
-            }
-            .navbar 
-            {
-                background-color: #ff9d00b9;
-                border-style: outset;
-                border-width: 5px;
-                border-color: rgb(18, 22, 139);
-                border-radius: 50px;
-                margin-top: 1vw;
-                width: 90%;
-                margin-left: 5%;
-                text-align: center;
-                margin-bottom: 2vw;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
-            .navbar a 
-            {
-                display: flex;
-                align-items: center;    
-                justify-content: center;
-                display: inline-block;
-                color: white;
-                text-decoration: none;
-                font-size: 3vw;
-                margin-left: 7%;
-                padding-bottom: 1vw;
-                padding-top: 0.5vw;
-            }
-            .navbar a:hover 
-            {
-                transition-duration:0.4s;
-                transition-delay:0.1s;
-                transition-timing-function:ease;
-                transition-property:all;
-                color:rgb(27, 29, 100);
-            }
-            #apresentação
-            {
-                display: block;
-                background-size: 100%;
-                background-attachment: fixed;
-                padding-top: 5vw;
-            }
-            #quadrado
-            {
-                width: 60%;
-                margin-left: 20%;
-                border-radius: 30px;
-                background-color: rgba(75, 75, 75, 0.37);
-                text-align: center;
-                margin-top: -4.3vw;
-            }
-            .logo
-            {
-                width: 40%;
-                margin-left: 1vw;
-                margin-bottom: 2vw;
-            }
-            .titulo_site
-            {
-                font-size: 5vw;
-                text-align: center;
-                color: rgb(255,255,255);
-                padding-top: 1vw;
-            }
-            html 
-            { 
-                scroll-behavior: smooth;
-            }
-            .img
-            {
-                width: 7vw;
-                margin-left: 90.5vw;
-                margin-top: -100%;
-            }
-        }
-        @media only screen and (max-width:699px)
-        {
-            header
-            {
-                visibility:hidden;
-            }   
-    
-            #botao-hamburg
-            {
-                visibility:visible;
-            }
-
-        }
-    </style>
     <script language="JavaScript">
         function abreMenu() 
         {
@@ -116,7 +16,6 @@
           document.getElementById("menu-lateral").style.border = "2px solid rgba(255,255,255)";
           document.getElementById("botao-hamburg").style.color = "#ffffff";
         }
-        
         function fechaMenu()
         {
           document.getElementById("menu-lateral").style.width = "0%";
@@ -125,20 +24,12 @@
           document.getElementById("botao-hamburg").style.color = "#ffffff";
           
         }
-        $('.nav a[href^="#"]').on('click', function(e) {
-        e.preventDefault();
-        var id = $(this).attr('href'),
-        targetOffset = $(id).offset().top;
-            
-        $('html, body').animate({ 
-            scrollTop: targetOffset - 10
-        }, 2000);
-        });
     </script>
 </head>
 <body>
+    <span id="Topo"></span>
     <header class="navbar">
-            <a scroll-behavior: smooth; href="#Flyer">Flyer</a>
+            <a href="#Flyer">Flyer</a>
             <a href="#Cartão">Cartão Interativo</a>
             <a href="#História">Nossa História</a>
     </header>
@@ -151,7 +42,6 @@
         </ul>
     </aside>
     <section id="geral">
-        <span id="Topo"></span>
         <section id="apresentação">
             <span id="botao-hamburg" onClick="abreMenu()">&#9776;</span>
                 <div id="quadrado">
@@ -162,16 +52,19 @@
                 <br>
                 <br>
                 <br>
+                <br>
+                <br>
+                <br>
         </section>
         <section id="conteudo">
-            <br>
             <span id="Flyer"></span>
-            <h1 class="titulo_conteudo">FLYER DA EMPRESA</h1><br>
-            <img class="img_conteudo" src="Flyer.png">
+            <h1 class="titulo_conteudo">FLYER DA EMPRESA</h1>
+            <img class="img_flyer" src="Flyer.png">
+            <br>
             <br>
             <span id="Cartão"></span>
-            <h1 class="titulo_conteudo">CARTÃO INTERATIVO</h1><br>
-            <img class="img_conteudo" src="Cartão.png">
+            <h1 class="titulo_conteudo">CARTÃO INTERATIVO</h1>
+            <img class="img_cartao" src="Cartão.png">
             <p>*Não está funcionando porque é só o png*</p>
             <br>
             <span id="História"></span>
@@ -185,7 +78,7 @@
                 <br>
         </section>
         <div>
-        <a href="#Topo"><img class="img" src="Seta.png"></a>
+        <a href="#Topo"><img class="img" src="setas.png"></a>
         </div>
     </section>
 </body>
